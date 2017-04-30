@@ -1,7 +1,7 @@
 {
     "intents": [
         {
-            "intent": "WeatherReport",
+            "intent": "TheButton",
             "slots": [
                 {
                     "name": "aspect",

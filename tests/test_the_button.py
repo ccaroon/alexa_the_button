@@ -3,13 +3,13 @@ import unittest
 import the_button
 import secrets
 
-class TestWeather(unittest.TestCase):
+class TestTheButton(unittest.TestCase):
 
     EVENT = {
         'request': {
             'type': "IntentRequest",
             'intent': {
-                'name': "WeatherReport",
+                'name': "TheButton",
                 'slots': {
                     'aspect': {
                         'name': 'aspect',

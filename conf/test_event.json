@@ -23,7 +23,7 @@
           "value": "spin"
         }
       },
-      "name": "WeatherReport"
+      "name": "TheButton"
     }
   },
   "context": {

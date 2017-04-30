@@ -74,8 +74,8 @@ def on_intent(request, session):
     intent_name = request['intent']['name']
 
     # Dispatch to your skill's intent handlers
-    if intent_name == "WeatherReport":
-        return handle_weather_report(intent, session)
+    if intent_name == "TheButton":
+        return handle_the_button(intent, session)
     elif intent_name == "AMAZON.HelpIntent":
         return handle_help()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
@@ -99,7 +99,7 @@ def handle_test():
     stmt = "Testing"
     return stmt
 
-def handle_weather_report(intent, session):
+def handle_the_button(intent, session):
     card_title = intent['name']
 
     aspect = intent['slots']['aspect']['value']
@@ -125,7 +125,7 @@ def handle_help():
 
 def handle_session_ended():
     card_title = "Session Ended"
-    speech_output = "Thanks for using WCNC Weather"
+    speech_output = "Thanks for using The Button"
     speechlet_response = build_speechlet_response(card_title, speech_output, None, True)
 
     return build_response({}, speechlet_response)
