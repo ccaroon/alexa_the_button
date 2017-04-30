@@ -18,8 +18,8 @@
     "requestId": "amzn1.echo-api.request.[unique-value-here]",
     "intent": {
       "slots": {
-        "aspect": {
-          "name": "aspect",
+        "action": {
+          "name": "action",
           "value": "spin"
         }
       },

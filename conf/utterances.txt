@@ -1,18 +1,18 @@
-TheButton what's the {aspect}
-TheButton what is the {aspect}
-TheButton about the {aspect}
-TheButton to tell me the {aspect}
-TheButton what's the current {aspect}
-TheButton what is the current {aspect}
-TheButton about the current {aspect}
-TheButton to tell me the current {aspect}
-TheButton for the {aspect}
-TheButton what the {aspect} is
-TheButton for the current {aspect}
-TheButton what the current {aspect} is
-TheButton for the {aspect} report
-TheButton for the {aspect} information
-TheButton for the {aspect} info
-TheButton for the current {aspect} report
-TheButton for the current {aspect} information
-TheButton for the current {aspect} info
+TheButton what's the {action}
+TheButton what is the {action}
+TheButton about the {action}
+TheButton to tell me the {action}
+TheButton what's the current {action}
+TheButton what is the current {action}
+TheButton about the current {action}
+TheButton to tell me the current {action}
+TheButton for the {action}
+TheButton what the {action} is
+TheButton for the current {action}
+TheButton what the current {action} is
+TheButton for the {action} report
+TheButton for the {action} information
+TheButton for the {action} info
+TheButton for the current {action} report
+TheButton for the current {action} information
+TheButton for the current {action} info

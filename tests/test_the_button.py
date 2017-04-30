@@ -11,8 +11,8 @@ class TestTheButton(unittest.TestCase):
             'intent': {
                 'name': "TheButton",
                 'slots': {
-                    'aspect': {
-                        'name': 'aspect',
+                    'action': {
+                        'name': 'action',
                         'value': None
                     }
                 }
@@ -39,7 +39,7 @@ class TestTheButton(unittest.TestCase):
     #     print("teardown")
 
     def test_deploy(self):
-        self.EVENT['request']['intent']['slots']['aspect']['value'] = "deploy"
+        self.EVENT['request']['intent']['slots']['action']['value'] = "deploy"
         result = the_button.the_button_handler(self.EVENT, {})
 
         self.assertRegexpMatches(
@@ -48,7 +48,7 @@ class TestTheButton(unittest.TestCase):
         )
 
     def test_test(self):
-        self.EVENT['request']['intent']['slots']['aspect']['value'] = "test"
+        self.EVENT['request']['intent']['slots']['action']['value'] = "test"
         result = the_button.the_button_handler(self.EVENT, {})
 
         self.assertRegexpMatches(
@@ -57,7 +57,7 @@ class TestTheButton(unittest.TestCase):
         )
 
     def test_spin(self):
-        self.EVENT['request']['intent']['slots']['aspect']['value'] = "spin"
+        self.EVENT['request']['intent']['slots']['action']['value'] = "spin"
         result = the_button.the_button_handler(self.EVENT, {})
 
         self.assertRegexpMatches(

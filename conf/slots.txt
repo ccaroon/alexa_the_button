@@ -1,4 +1,4 @@
-LIST_OF_ASPECTS
+LIST_OF_ACTIONS
 ---------------
 deploy
 spin

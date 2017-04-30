@@ -4,8 +4,8 @@
             "intent": "TheButton",
             "slots": [
                 {
-                    "name": "aspect",
-                    "type": "LIST_OF_ASPECTS"
+                    "name": "action",
+                    "type": "LIST_OF_ACTIONS"
                 }
             ]
         },

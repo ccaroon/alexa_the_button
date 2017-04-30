@@ -96,23 +96,23 @@ def handle_spin():
 
 def handle_test():
     call_particle_function("remoteCntl", "test")
-    stmt = "Testing"
+    stmt = "Testing 1 2 3"
     return stmt
 
 def handle_the_button(intent, session):
     card_title = intent['name']
 
-    aspect = intent['slots']['aspect']['value']
+    action = intent['slots']['action']['value']
 
     speech_output = ""
-    if aspect == "spin":
+    if action == "spin":
         speech_output = handle_spin()
-    elif aspect == "test":
+    elif action == "test":
         speech_output = handle_test()
-    elif aspect == "deploy":
+    elif action == "deploy":
         speech_output = handle_deploy()
     else:
-        speech_output = "The Button does not know anything about " + str(aspect)
+        speech_output = "The Button does not know how to " + str(action)
 
     return build_response(
         None,
