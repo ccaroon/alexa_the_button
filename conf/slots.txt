@@ -1,5 +1,4 @@
 LIST_OF_ACTIONS
 ---------------
+demo
 deploy
-spin
-test

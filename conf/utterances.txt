@@ -1,18 +1,13 @@
-TheButton what's the {action}
-TheButton what is the {action}
-TheButton about the {action}
-TheButton to tell me the {action}
-TheButton what's the current {action}
-TheButton what is the current {action}
-TheButton about the current {action}
-TheButton to tell me the current {action}
-TheButton for the {action}
-TheButton what the {action} is
-TheButton for the current {action}
-TheButton what the current {action} is
-TheButton for the {action} report
-TheButton for the {action} information
-TheButton for the {action} info
-TheButton for the current {action} report
-TheButton for the current {action} information
-TheButton for the current {action} info
+TheButton to {action}
+TheButton to please {action}
+TheButton to {action} please
+TheButton to start a {action}
+TheButton to please start a {action}
+TheButton to start an {action}
+TheButton to please start an {action}
+TheButton to start a {action} please
+TheButton to start an {action} please
+TheButton for a {action}
+TheButton for an {action}
+TheButton for a {action} please
+TheButton for an {action} please

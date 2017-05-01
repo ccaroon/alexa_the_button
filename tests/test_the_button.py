@@ -27,9 +27,7 @@ class TestTheButton(unittest.TestCase):
     }
 
     test_patterns = {
-        'deploy': "Deploying",
-        "test": "Testing",
-        "spin": "Spinning"
+        "demo": "Thank you!"
     }
 
     # def setUp(self):
@@ -38,31 +36,13 @@ class TestTheButton(unittest.TestCase):
     # def tearDown(self):
     #     print("teardown")
 
-    def test_deploy(self):
-        self.EVENT['request']['intent']['slots']['action']['value'] = "deploy"
+    def test_demo(self):
+        self.EVENT['request']['intent']['slots']['action']['value'] = "demo"
         result = the_button.the_button_handler(self.EVENT, {})
 
         self.assertRegexpMatches(
             result['response']['outputSpeech']['text'],
-            self.test_patterns['deploy']
-        )
-
-    def test_test(self):
-        self.EVENT['request']['intent']['slots']['action']['value'] = "test"
-        result = the_button.the_button_handler(self.EVENT, {})
-
-        self.assertRegexpMatches(
-            result['response']['outputSpeech']['text'],
-            self.test_patterns['test']
-        )
-
-    def test_spin(self):
-        self.EVENT['request']['intent']['slots']['action']['value'] = "spin"
-        result = the_button.the_button_handler(self.EVENT, {})
-
-        self.assertRegexpMatches(
-            result['response']['outputSpeech']['text'],
-            self.test_patterns['spin']
+            self.test_patterns['demo']
         )
 
     def test_incorrect_app_id(self):

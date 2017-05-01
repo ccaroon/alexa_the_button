@@ -84,19 +84,18 @@ def on_intent(request, session):
         raise ValueError("Invalid intent")
 
 # ---------------------------- Handlers ------------------------------------
+def handle_demo():
+    call_particle_function("remoteCntl", "demo")
+    stmt = "Thank you! No need for applause."
+    return stmt
+
 def handle_deploy():
-    call_particle_function("remoteCntl", "deploy")
-    stmt = "Deploying"
-    return stmt
+    success = call_particle_function("remoteCntl", "deploy")
+    if (success):
+        stmt = "Deployment successful."
+    else:
+        stmt = "Deployment failed."
 
-def handle_spin():
-    call_particle_function("remoteCntl", "spin")
-    stmt = "Spinning"
-    return stmt
-
-def handle_test():
-    call_particle_function("remoteCntl", "test")
-    stmt = "Testing 1 2 3"
     return stmt
 
 def handle_the_button(intent, session):
@@ -105,10 +104,8 @@ def handle_the_button(intent, session):
     action = intent['slots']['action']['value']
 
     speech_output = ""
-    if action == "spin":
-        speech_output = handle_spin()
-    elif action == "test":
-        speech_output = handle_test()
+    if action == "demo":
+        speech_output = handle_demo()
     elif action == "deploy":
         speech_output = handle_deploy()
     else:

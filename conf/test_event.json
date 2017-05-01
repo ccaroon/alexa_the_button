@@ -20,7 +20,7 @@
       "slots": {
         "action": {
           "name": "action",
-          "value": "spin"
+          "value": "demo"
         }
       },
       "name": "TheButton"
